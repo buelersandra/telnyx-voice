@@ -191,7 +191,7 @@ extension ConnectViewModel: TxClientDelegate {
             
             
             self.callStatus.accept(CallClientModel(hideEndCall: true,hideAcceptCall: true,
-                                                   hideMakeCall: false,callStateInfo: "CONNECTING"))
+                                                   hideMakeCall: false,callStateInfo: "CONNECTED"))
         }
        
         
@@ -352,14 +352,7 @@ extension ConnectViewModel: TxClientDelegate {
 
         callKitCallController.request(transaction) { error in
             if let error = error {
-                #if targetEnvironment(simulator)
-                //The simulator does not support to register an incoming call through CallKit.
-                //For that reason when an incoming call is received on the simulator,
-                //we are updating the UI and not registering the callID to callkit.
-                //When the user whats to hangup the call and the incoming call was not registered in callkit,
-                //the CXEndCallAction fails. That's why we are manually ending the call in this case.
-                self.telnyxClient?.calls[uuid]?.hangup() // end the active call
-                #endif
+                
                 print("AppDelegate:: EndCallAction transaction request failed: \(error.localizedDescription).")
             } else {
                 print("AppDelegate:: EndCallAction transaction request successful")

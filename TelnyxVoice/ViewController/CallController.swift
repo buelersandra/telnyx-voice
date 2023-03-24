@@ -26,10 +26,11 @@ class CallController: UIViewController {
     
     lazy var callStateLabel:UILabel = {
         let view = UILabel()
-        view.font = UIFont(name: view.font.fontName, size: 20)
+        view.font = UIFont(name: view.font.fontName, size: 16)
         view.textColor = .red
         view.translatesAutoresizingMaskIntoConstraints = false
         view.text = "Make a call"
+        view.numberOfLines = 0
         return view
     }()
     
