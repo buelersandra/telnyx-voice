@@ -309,7 +309,8 @@ extension ConnectViewModel: TxClientDelegate {
             self.callStatus.accept(CallClientModel(hideEndCall: true,
                                                    hideAcceptCall: true,
                                                    hideMakeCall: false,
-                                                   callStateInfo: "Call Ended"))
+                                                   callStateInfo: "You are ready to make calls or Accept calls"))
+            
             self.connectionStatus.accept(ConnectionModel(buttonAction: "Disconnect",
                                                     clientConnectionInfo: "You are ready to make calls or Accept calls",
                                                     hideMakeACall: false, hideAcceptCall: true,hideEndCall: true))
