@@ -33,6 +33,15 @@ class CallController: UIViewController {
         return view
     }()
     
+    lazy var usernameLabel:UILabel = {
+        let view = UILabel()
+        view.font = UIFont(name: view.font.fontName, size: 16)
+        view.textColor = .red
+        view.translatesAutoresizingMaskIntoConstraints = false
+        view.text = "Username or Number"
+        return view
+    }()
+    
     lazy var callerIdField:UITextField = {
         let view = UITextField()
         view.placeholder = "Username or Number"
@@ -97,9 +106,11 @@ class CallController: UIViewController {
     func initView(){
         self.view.addSubview(stackView)
         self.stackView.addArrangedSubview(callStateLabel)
+        self.stackView.addArrangedSubview(usernameLabel)
         self.stackView.addArrangedSubview(callerIdField)
         
         self.stackView.addArrangedSubview(callBtn)
+        
         self.stackView.addArrangedSubview(acceptCallBtn)
         self.stackView.addArrangedSubview(endCallBtn)
         

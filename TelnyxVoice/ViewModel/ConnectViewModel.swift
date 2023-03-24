@@ -29,7 +29,7 @@ class ConnectViewModel : NSObject{
         client = TxClient()
         self.callKitCallController = CXCallController()
         connectionStatus = BehaviorRelay<ConnectionModel>(value: ConnectionModel(buttonAction: "Connect",
-                                                                          clientConnectionInfo: "No Connection Setup",
+                                                                          clientConnectionInfo: "No Connection Setup Enter Username and Password",
                                                                           hideMakeACall: true))
         
         callStatus = BehaviorRelay<CallClientModel>(value: CallClientModel(hideEndCall: true,
@@ -161,7 +161,7 @@ extension ConnectViewModel: TxClientDelegate {
         
         DispatchQueue.main.async {
             self.connectionStatus.accept(ConnectionModel(buttonAction: "Connect",
-                                                    clientConnectionInfo: "No Connection Setup",
+                                                    clientConnectionInfo: "No Connection Setup Enter Username and Password",
                                                     hideMakeACall: true))
         }
        

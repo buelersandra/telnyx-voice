@@ -4,3 +4,4 @@ Pods/
 build
 project.xcworkspace
 *.xcuserstate
+*.xcworkspace

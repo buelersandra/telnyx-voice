@@ -34,7 +34,7 @@ class ConnectController: UIViewController, Stepper {
     
     lazy var connectionStateLabel:UILabel = {
         let view = UILabel()
-        view.font = UIFont(name: view.font.fontName, size: 20)
+        view.font = UIFont(name: view.font.fontName, size: 15)
         view.textColor = .red
         view.translatesAutoresizingMaskIntoConstraints = false
         view.numberOfLines = 0
@@ -67,6 +67,26 @@ class ConnectController: UIViewController, Stepper {
         view.setTitleColor(.white, for: .normal)
         view.titleLabel?.font = UIFont(name: view.titleLabel?.font.fontName ?? "", size: 20)
         view.setTitle( "Accept Call", for: .normal)
+        return view
+    }()
+    
+    lazy var usernameLbl:UILabel = {
+        let view = UILabel()
+        view.font = UIFont(name: view.font.fontName, size: 15)
+        view.textColor = .red
+        view.translatesAutoresizingMaskIntoConstraints = false
+        view.numberOfLines = 1
+        view.text = "Username"
+        return view
+    }()
+    
+    lazy var passwordLbl:UILabel = {
+        let view = UILabel()
+        view.font = UIFont(name: view.font.fontName, size: 15)
+        view.textColor = .red
+        view.translatesAutoresizingMaskIntoConstraints = false
+        view.numberOfLines = 1
+        view.text = "Password"
         return view
     }()
     
@@ -178,7 +198,9 @@ class ConnectController: UIViewController, Stepper {
         self.view.addSubview(stackView)
         
         stackView.addArrangedSubview(connectionStateLabel)
+        stackView.addArrangedSubview(usernameLbl)
         stackView.addArrangedSubview(usernameField)
+        stackView.addArrangedSubview(passwordLbl)
         stackView.addArrangedSubview(passwordField)
         stackView.addArrangedSubview(connectClientBtn)
         stackView.addArrangedSubview(makeCallBtn)
@@ -186,7 +208,7 @@ class ConnectController: UIViewController, Stepper {
         stackView.addArrangedSubview(endCallBtn)
         
         stackView.topAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.topAnchor,constant: 16).isActive = true
-        stackView.heightAnchor.constraint(equalToConstant: 300).isActive = true
+        stackView.heightAnchor.constraint(equalToConstant: 350).isActive = true
         stackView.leadingAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.leadingAnchor,constant: 16).isActive = true
         stackView.trailingAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.trailingAnchor,constant: -16).isActive = true
         
