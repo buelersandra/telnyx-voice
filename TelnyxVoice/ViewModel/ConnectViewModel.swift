@@ -128,6 +128,7 @@ class ConnectViewModel : NSObject{
     
     func endCall(){
         guard let uuid = self.call?.callInfo?.callId else { return }
+        self.call?.hangup()
         executeEndCallAction(uuid: uuid)
         resetCallUI()
 
@@ -175,7 +176,10 @@ extension ConnectViewModel: TxClientDelegate {
         DispatchQueue.main.async {
             self.connectionStatus.accept(ConnectionModel(buttonAction: "Connect",
                                                     clientConnectionInfo: "An error occurred during connection",
-                                                    hideMakeACall: true))
+                                                    hideMakeACall: false))
+            self.callStatus.accept(CallClientModel(hideEndCall: true,
+                                                   hideAcceptCall: true,
+                                                   hideMakeCall: false,callStateInfo: ""))
         }
         
     }
@@ -358,7 +362,9 @@ extension ConnectViewModel: TxClientDelegate {
                 print("AppDelegate:: EndCallAction transaction request successful")
             }
             self.callKitUUID = nil
+            
         }
+        
     }
    
     
@@ -397,6 +403,12 @@ extension ConnectViewModel : CXProviderDelegate{
         action.fulfill()
         
         
+    }
+    
+    func provider(_ provider: CXProvider, perform action: CXEndCallAction) {
+        print("AppDelegate:: END call action: callKitUUID [\(String(describing: self.callKitUUID))] action [\(action.callUUID)]")
+        self.call?.hangup()
+        action.fulfill()
     }
     
     func provider(_ provider: CXProvider, didActivate audioSession: AVAudioSession) {
