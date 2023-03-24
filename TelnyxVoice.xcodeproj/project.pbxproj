@@ -1,0 +1,804 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0D53951C65D04AA6D110C8B0 /* Pods_TelnyxVoiceTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D379F047A555D04AE834341D /* Pods_TelnyxVoiceTests.framework */; };
+		1BF2D10E4C01B0374ABE3E05 /* Pods_TelnyxVoice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B325B26B23F6493A2946A5C1 /* Pods_TelnyxVoice.framework */; };
+		32096A9C29C6A8A2004E4485 /* ConnectViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32096A9B29C6A8A2004E4485 /* ConnectViewModel.swift */; };
+		32096A9D29C6A8A2004E4485 /* ConnectViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32096A9B29C6A8A2004E4485 /* ConnectViewModel.swift */; };
+		32096AA329C7E3F9004E4485 /* ConnectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32096AA229C7E3F9004E4485 /* ConnectionModel.swift */; };
+		32096AA429C7E3F9004E4485 /* ConnectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32096AA229C7E3F9004E4485 /* ConnectionModel.swift */; };
+		32096AA629C7FD28004E4485 /* CallModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32096AA529C7FD28004E4485 /* CallModel.swift */; };
+		32096AA729C7FD28004E4485 /* CallModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32096AA529C7FD28004E4485 /* CallModel.swift */; };
+		32096AAA29C886B4004E4485 /* CallFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32096AA929C886B4004E4485 /* CallFlow.swift */; };
+		32096AAB29C886B4004E4485 /* CallFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32096AA929C886B4004E4485 /* CallFlow.swift */; };
+		32096AAE29C88D8E004E4485 /* AppService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32096AAD29C88D8E004E4485 /* AppService.swift */; };
+		32096AAF29C88D8E004E4485 /* AppService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32096AAD29C88D8E004E4485 /* AppService.swift */; };
+		32096AB129C95FE4004E4485 /* AppFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32096AB029C95FE4004E4485 /* AppFlow.swift */; };
+		32096AB229C95FE4004E4485 /* AppFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32096AB029C95FE4004E4485 /* AppFlow.swift */; };
+		3217066029CD4EB400DFCD28 /* ConnectViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3217065F29CD4EB400DFCD28 /* ConnectViewModelTests.swift */; };
+		3220FC0329C652B600BD946F /* ConnectController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3220FC0229C652B600BD946F /* ConnectController.swift */; };
+		32BE0FEB29C600C800D4BC7C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BE0FEA29C600C800D4BC7C /* AppDelegate.swift */; };
+		32BE0FED29C600C800D4BC7C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BE0FEC29C600C800D4BC7C /* SceneDelegate.swift */; };
+		32BE0FEF29C600C800D4BC7C /* CallController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BE0FEE29C600C800D4BC7C /* CallController.swift */; };
+		32BE0FF429C600CA00D4BC7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32BE0FF329C600CA00D4BC7C /* Assets.xcassets */; };
+		32BE0FF729C600CA00D4BC7C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32BE0FF529C600CA00D4BC7C /* LaunchScreen.storyboard */; };
+		32BE100229C600CA00D4BC7C /* TelnyxVoiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BE100129C600CA00D4BC7C /* TelnyxVoiceTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		32BE0FFE29C600CA00D4BC7C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 32BE0FDF29C600C700D4BC7C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 32BE0FE629C600C800D4BC7C;
+			remoteInfo = TelnyxVoice;
+		};
+		32BE100829C600CA00D4BC7C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 32BE0FDF29C600C700D4BC7C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 32BE0FE629C600C800D4BC7C;
+			remoteInfo = TelnyxVoice;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		264736DDB39C7A1B854AC6DF /* Pods-TelnyxVoiceTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TelnyxVoiceTests.release.xcconfig"; path = "Target Support Files/Pods-TelnyxVoiceTests/Pods-TelnyxVoiceTests.release.xcconfig"; sourceTree = "<group>"; };
+		2A30600D2F4B897AB88CA443 /* Pods-TelnyxVoice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TelnyxVoice.debug.xcconfig"; path = "Target Support Files/Pods-TelnyxVoice/Pods-TelnyxVoice.debug.xcconfig"; sourceTree = "<group>"; };
+		32096A9B29C6A8A2004E4485 /* ConnectViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectViewModel.swift; sourceTree = "<group>"; };
+		32096AA229C7E3F9004E4485 /* ConnectionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionModel.swift; sourceTree = "<group>"; };
+		32096AA529C7FD28004E4485 /* CallModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallModel.swift; sourceTree = "<group>"; };
+		32096AA929C886B4004E4485 /* CallFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallFlow.swift; sourceTree = "<group>"; };
+		32096AAD29C88D8E004E4485 /* AppService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppService.swift; sourceTree = "<group>"; };
+		32096AB029C95FE4004E4485 /* AppFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFlow.swift; sourceTree = "<group>"; };
+		3217065F29CD4EB400DFCD28 /* ConnectViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectViewModelTests.swift; sourceTree = "<group>"; };
+		3220FC0229C652B600BD946F /* ConnectController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectController.swift; sourceTree = "<group>"; };
+		32BE0FE729C600C800D4BC7C /* TelnyxVoice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TelnyxVoice.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		32BE0FEA29C600C800D4BC7C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		32BE0FEC29C600C800D4BC7C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		32BE0FEE29C600C800D4BC7C /* CallController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallController.swift; sourceTree = "<group>"; };
+		32BE0FF329C600CA00D4BC7C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		32BE0FF629C600CA00D4BC7C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		32BE0FF829C600CA00D4BC7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		32BE0FFD29C600CA00D4BC7C /* TelnyxVoiceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TelnyxVoiceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		32BE100129C600CA00D4BC7C /* TelnyxVoiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelnyxVoiceTests.swift; sourceTree = "<group>"; };
+		32BE100729C600CA00D4BC7C /* TelnyxVoiceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TelnyxVoiceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		77964A0111A99191DD8E1881 /* Pods-TelnyxVoiceTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TelnyxVoiceTests.debug.xcconfig"; path = "Target Support Files/Pods-TelnyxVoiceTests/Pods-TelnyxVoiceTests.debug.xcconfig"; sourceTree = "<group>"; };
+		985554287942C41B035F88BD /* Pods-TelnyxVoice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TelnyxVoice.release.xcconfig"; path = "Target Support Files/Pods-TelnyxVoice/Pods-TelnyxVoice.release.xcconfig"; sourceTree = "<group>"; };
+		B325B26B23F6493A2946A5C1 /* Pods_TelnyxVoice.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TelnyxVoice.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D379F047A555D04AE834341D /* Pods_TelnyxVoiceTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TelnyxVoiceTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		32BE0FE429C600C800D4BC7C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BF2D10E4C01B0374ABE3E05 /* Pods_TelnyxVoice.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32BE0FFA29C600CA00D4BC7C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D53951C65D04AA6D110C8B0 /* Pods_TelnyxVoiceTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32BE100429C600CA00D4BC7C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0C67D56BE9953339CA0AA635 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B325B26B23F6493A2946A5C1 /* Pods_TelnyxVoice.framework */,
+				D379F047A555D04AE834341D /* Pods_TelnyxVoiceTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		32096A9E29C7C4C9004E4485 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				32096AA229C7E3F9004E4485 /* ConnectionModel.swift */,
+				32096AA529C7FD28004E4485 /* CallModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		32096A9F29C7C5DE004E4485 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		32096AA029C7C5EC004E4485 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				32096A9B29C6A8A2004E4485 /* ConnectViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		32096AA129C7C609004E4485 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				32BE0FEE29C600C800D4BC7C /* CallController.swift */,
+				3220FC0229C652B600BD946F /* ConnectController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		32096AA829C8868E004E4485 /* Flow */ = {
+			isa = PBXGroup;
+			children = (
+				32096AA929C886B4004E4485 /* CallFlow.swift */,
+				32096AB029C95FE4004E4485 /* AppFlow.swift */,
+			);
+			path = Flow;
+			sourceTree = "<group>";
+		};
+		32096AAC29C88D70004E4485 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				32096AAD29C88D8E004E4485 /* AppService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		32BE0FDE29C600C700D4BC7C = {
+			isa = PBXGroup;
+			children = (
+				32BE0FE929C600C800D4BC7C /* TelnyxVoice */,
+				32BE100029C600CA00D4BC7C /* TelnyxVoiceTests */,
+				32BE0FE829C600C800D4BC7C /* Products */,
+				C60EAFBD07902E5A558C53AE /* Pods */,
+				0C67D56BE9953339CA0AA635 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		32BE0FE829C600C800D4BC7C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				32BE0FE729C600C800D4BC7C /* TelnyxVoice.app */,
+				32BE0FFD29C600CA00D4BC7C /* TelnyxVoiceTests.xctest */,
+				32BE100729C600CA00D4BC7C /* TelnyxVoiceUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		32BE0FE929C600C800D4BC7C /* TelnyxVoice */ = {
+			isa = PBXGroup;
+			children = (
+				32096AAC29C88D70004E4485 /* Service */,
+				32096AA829C8868E004E4485 /* Flow */,
+				32096AA129C7C609004E4485 /* ViewController */,
+				32096AA029C7C5EC004E4485 /* ViewModel */,
+				32096A9F29C7C5DE004E4485 /* View */,
+				32096A9E29C7C4C9004E4485 /* Model */,
+				32BE0FEA29C600C800D4BC7C /* AppDelegate.swift */,
+				32BE0FEC29C600C800D4BC7C /* SceneDelegate.swift */,
+				32BE0FF329C600CA00D4BC7C /* Assets.xcassets */,
+				32BE0FF529C600CA00D4BC7C /* LaunchScreen.storyboard */,
+				32BE0FF829C600CA00D4BC7C /* Info.plist */,
+			);
+			path = TelnyxVoice;
+			sourceTree = "<group>";
+		};
+		32BE100029C600CA00D4BC7C /* TelnyxVoiceTests */ = {
+			isa = PBXGroup;
+			children = (
+				32BE100129C600CA00D4BC7C /* TelnyxVoiceTests.swift */,
+				3217065F29CD4EB400DFCD28 /* ConnectViewModelTests.swift */,
+			);
+			path = TelnyxVoiceTests;
+			sourceTree = "<group>";
+		};
+		C60EAFBD07902E5A558C53AE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2A30600D2F4B897AB88CA443 /* Pods-TelnyxVoice.debug.xcconfig */,
+				985554287942C41B035F88BD /* Pods-TelnyxVoice.release.xcconfig */,
+				77964A0111A99191DD8E1881 /* Pods-TelnyxVoiceTests.debug.xcconfig */,
+				264736DDB39C7A1B854AC6DF /* Pods-TelnyxVoiceTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		32BE0FE629C600C800D4BC7C /* TelnyxVoice */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 32BE101129C600CA00D4BC7C /* Build configuration list for PBXNativeTarget "TelnyxVoice" */;
+			buildPhases = (
+				3FD5BA040784555B8D9C6AD0 /* [CP] Check Pods Manifest.lock */,
+				32BE0FE329C600C800D4BC7C /* Sources */,
+				32BE0FE429C600C800D4BC7C /* Frameworks */,
+				32BE0FE529C600C800D4BC7C /* Resources */,
+				3C44133B8A71CC48F57709E5 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TelnyxVoice;
+			productName = TelnyxVoice;
+			productReference = 32BE0FE729C600C800D4BC7C /* TelnyxVoice.app */;
+			productType = "com.apple.product-type.application";
+		};
+		32BE0FFC29C600CA00D4BC7C /* TelnyxVoiceTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 32BE101429C600CA00D4BC7C /* Build configuration list for PBXNativeTarget "TelnyxVoiceTests" */;
+			buildPhases = (
+				CA70F7EF4294E33B27AE28CC /* [CP] Check Pods Manifest.lock */,
+				32BE0FF929C600CA00D4BC7C /* Sources */,
+				32BE0FFA29C600CA00D4BC7C /* Frameworks */,
+				32BE0FFB29C600CA00D4BC7C /* Resources */,
+				917A30C5C8CD30FC7FA8F61D /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				32BE0FFF29C600CA00D4BC7C /* PBXTargetDependency */,
+			);
+			name = TelnyxVoiceTests;
+			productName = TelnyxVoiceTests;
+			productReference = 32BE0FFD29C600CA00D4BC7C /* TelnyxVoiceTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		32BE100629C600CA00D4BC7C /* TelnyxVoiceUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 32BE101729C600CA00D4BC7C /* Build configuration list for PBXNativeTarget "TelnyxVoiceUITests" */;
+			buildPhases = (
+				32BE100329C600CA00D4BC7C /* Sources */,
+				32BE100429C600CA00D4BC7C /* Frameworks */,
+				32BE100529C600CA00D4BC7C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				32BE100929C600CA00D4BC7C /* PBXTargetDependency */,
+			);
+			name = TelnyxVoiceUITests;
+			productName = TelnyxVoiceUITests;
+			productReference = 32BE100729C600CA00D4BC7C /* TelnyxVoiceUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		32BE0FDF29C600C700D4BC7C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					32BE0FE629C600C800D4BC7C = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					32BE0FFC29C600CA00D4BC7C = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 32BE0FE629C600C800D4BC7C;
+					};
+					32BE100629C600CA00D4BC7C = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 32BE0FE629C600C800D4BC7C;
+					};
+				};
+			};
+			buildConfigurationList = 32BE0FE229C600C700D4BC7C /* Build configuration list for PBXProject "TelnyxVoice" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 32BE0FDE29C600C700D4BC7C;
+			productRefGroup = 32BE0FE829C600C800D4BC7C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				32BE0FE629C600C800D4BC7C /* TelnyxVoice */,
+				32BE0FFC29C600CA00D4BC7C /* TelnyxVoiceTests */,
+				32BE100629C600CA00D4BC7C /* TelnyxVoiceUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		32BE0FE529C600C800D4BC7C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32BE0FF729C600CA00D4BC7C /* LaunchScreen.storyboard in Resources */,
+				32BE0FF429C600CA00D4BC7C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32BE0FFB29C600CA00D4BC7C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32BE100529C600CA00D4BC7C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3C44133B8A71CC48F57709E5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TelnyxVoice/Pods-TelnyxVoice-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TelnyxVoice/Pods-TelnyxVoice-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TelnyxVoice/Pods-TelnyxVoice-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3FD5BA040784555B8D9C6AD0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TelnyxVoice-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		917A30C5C8CD30FC7FA8F61D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TelnyxVoiceTests/Pods-TelnyxVoiceTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TelnyxVoiceTests/Pods-TelnyxVoiceTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TelnyxVoiceTests/Pods-TelnyxVoiceTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CA70F7EF4294E33B27AE28CC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TelnyxVoiceTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		32BE0FE329C600C800D4BC7C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3220FC0329C652B600BD946F /* ConnectController.swift in Sources */,
+				32096AAE29C88D8E004E4485 /* AppService.swift in Sources */,
+				32096AA329C7E3F9004E4485 /* ConnectionModel.swift in Sources */,
+				32096AB129C95FE4004E4485 /* AppFlow.swift in Sources */,
+				32BE0FEF29C600C800D4BC7C /* CallController.swift in Sources */,
+				32096A9C29C6A8A2004E4485 /* ConnectViewModel.swift in Sources */,
+				32BE0FEB29C600C800D4BC7C /* AppDelegate.swift in Sources */,
+				32096AAA29C886B4004E4485 /* CallFlow.swift in Sources */,
+				32BE0FED29C600C800D4BC7C /* SceneDelegate.swift in Sources */,
+				32096AA629C7FD28004E4485 /* CallModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32BE0FF929C600CA00D4BC7C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32096AB229C95FE4004E4485 /* AppFlow.swift in Sources */,
+				32BE100229C600CA00D4BC7C /* TelnyxVoiceTests.swift in Sources */,
+				32096AAF29C88D8E004E4485 /* AppService.swift in Sources */,
+				32096AA429C7E3F9004E4485 /* ConnectionModel.swift in Sources */,
+				32096AAB29C886B4004E4485 /* CallFlow.swift in Sources */,
+				32096A9D29C6A8A2004E4485 /* ConnectViewModel.swift in Sources */,
+				32096AA729C7FD28004E4485 /* CallModel.swift in Sources */,
+				3217066029CD4EB400DFCD28 /* ConnectViewModelTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32BE100329C600CA00D4BC7C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		32BE0FFF29C600CA00D4BC7C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 32BE0FE629C600C800D4BC7C /* TelnyxVoice */;
+			targetProxy = 32BE0FFE29C600CA00D4BC7C /* PBXContainerItemProxy */;
+		};
+		32BE100929C600CA00D4BC7C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 32BE0FE629C600C800D4BC7C /* TelnyxVoice */;
+			targetProxy = 32BE100829C600CA00D4BC7C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		32BE0FF529C600CA00D4BC7C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				32BE0FF629C600CA00D4BC7C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		32BE100F29C600CA00D4BC7C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		32BE101029C600CA00D4BC7C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		32BE101229C600CA00D4BC7C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A30600D2F4B897AB88CA443 /* Pods-TelnyxVoice.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 25C4CBT4M3;
+				ENABLE_BITCODE = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TelnyxVoice/Info.plist;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "TelnyxVoice Requires microphone access in order to capture and transmit audio";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = sandrakonotey.TelnyxVoice1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		32BE101329C600CA00D4BC7C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 985554287942C41B035F88BD /* Pods-TelnyxVoice.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 25C4CBT4M3;
+				ENABLE_BITCODE = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TelnyxVoice/Info.plist;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "TelnyxVoice Requires microphone access in order to capture and transmit audio";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = sandrakonotey.TelnyxVoice1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		32BE101529C600CA00D4BC7C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 77964A0111A99191DD8E1881 /* Pods-TelnyxVoiceTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 43C8PVP2R5;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = sandrakonotey.TelnyxVoiceTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TelnyxVoice.app/TelnyxVoice";
+			};
+			name = Debug;
+		};
+		32BE101629C600CA00D4BC7C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 264736DDB39C7A1B854AC6DF /* Pods-TelnyxVoiceTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 43C8PVP2R5;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = sandrakonotey.TelnyxVoiceTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TelnyxVoice.app/TelnyxVoice";
+			};
+			name = Release;
+		};
+		32BE101829C600CA00D4BC7C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = sandrakonotey.TelnyxVoiceUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TelnyxVoice;
+			};
+			name = Debug;
+		};
+		32BE101929C600CA00D4BC7C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = sandrakonotey.TelnyxVoiceUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TelnyxVoice;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		32BE0FE229C600C700D4BC7C /* Build configuration list for PBXProject "TelnyxVoice" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32BE100F29C600CA00D4BC7C /* Debug */,
+				32BE101029C600CA00D4BC7C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		32BE101129C600CA00D4BC7C /* Build configuration list for PBXNativeTarget "TelnyxVoice" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32BE101229C600CA00D4BC7C /* Debug */,
+				32BE101329C600CA00D4BC7C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		32BE101429C600CA00D4BC7C /* Build configuration list for PBXNativeTarget "TelnyxVoiceTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32BE101529C600CA00D4BC7C /* Debug */,
+				32BE101629C600CA00D4BC7C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		32BE101729C600CA00D4BC7C /* Build configuration list for PBXNativeTarget "TelnyxVoiceUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32BE101829C600CA00D4BC7C /* Debug */,
+				32BE101929C600CA00D4BC7C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 32BE0FDF29C600C700D4BC7C /* Project object */;
+}

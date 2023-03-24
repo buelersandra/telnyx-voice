@@ -1,0 +1,6 @@
+Pods/
+.idea/
+.DS_Store
+build
+project.xcworkspace
+*.xcuserstate
